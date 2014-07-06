@@ -152,4 +152,11 @@
     [seal removeFromParent];
 }
 
+- (BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair
+                          seal:(CCNode *)nodeA
+                          wildcard:(CCNode *)nodeB{
+    CCLOG(@"Testing");
+    
+}
+
 @end
