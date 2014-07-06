@@ -133,7 +133,7 @@
 }
 
 - (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair seal:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
-    self.physicsBody.collisionType = @"seal";
+    self.physicsBody.collisionType = seal.didLoadFromCCB;
     CCLOG(@"Something collided with a seal!");
     
     float energy = [pair totalKineticEnergy];
