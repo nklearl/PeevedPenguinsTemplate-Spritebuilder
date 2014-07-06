@@ -133,19 +133,18 @@
 }
 
 - (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair
-                               seal:(CCNode *)nodeA
-                           wildcard:(CCNode *)nodeB {
+                               seal:(CCNode *)seal
+                           wildcard:(CCNode *)wildcard {
     CCLOG(@"Something collided with a seal!");
-    CCLOG(@"NodeA: %@", nodeA);
     
     float energy = [pair totalKineticEnergy];
     
-    // if energy is large enough, remove the seal
-    if (energy > 5000.f) {
-        [[_physicsNode space] addPostStepBlock:^{
-            [self sealRemoved:nodeA];
-        } key:nodeA];
-    }
+//    // if energy is large enough, remove the seal
+//    if (energy > 5000.f) {
+//        [[_physicsNode space] addPostStepBlock:^{
+//            [self sealRemoved:nodeA];
+//        } key:nodeA];
+//    }
 }
 
 - (void)sealRemoved:(CCNode *)seal {
