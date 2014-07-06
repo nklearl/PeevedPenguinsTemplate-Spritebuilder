@@ -132,7 +132,8 @@
     [[CCDirector sharedDirector] replaceScene:[CCBReader loadAsScene:@"Gameplay"]];
 }
 
-- (BOOL)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair seal:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
+- (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair seal:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
+    self.physicsBody.collisionType = @"seal";
     CCLOG(@"Something collided with a seal!");
     
     float energy = [pair totalKineticEnergy];
@@ -143,7 +144,6 @@
             [self sealRemoved:nodeA];
         } key:nodeA];
     }
-    return YES;
 }
 
 - (void)sealRemoved:(CCNode *)seal {
