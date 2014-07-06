@@ -51,7 +51,7 @@
 				<key>displayName</key>
 				<string>seal</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_seal</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>physicsBody</key>
@@ -161,6 +161,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -174,7 +176,7 @@
 				<key>displayName</key>
 				<string>seal</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_seal</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>physicsBody</key>
@@ -284,8 +286,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -299,7 +299,7 @@
 				<key>displayName</key>
 				<string>seal</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_seal</string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>physicsBody</key>
