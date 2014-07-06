@@ -7,7 +7,7 @@
 //
 
 #import "Gameplay.h"
-#import "Seal.h"
+//#import "Seal.h"
 
 @implementation Gameplay{
     CCPhysicsNode *_physicsNode;
@@ -36,6 +36,7 @@
     _mouseJointNode.physicsBody.collisionMask = @[];
     
     _physicsNode.collisionDelegate = self;
+    self.physicsBody.collisionType = @"seal";
 }
 
 // called on every touch in this scene
