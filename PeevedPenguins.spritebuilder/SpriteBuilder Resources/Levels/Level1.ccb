@@ -51,7 +51,7 @@
 				<key>displayName</key>
 				<string>seal</string>
 				<key>memberVarAssignmentName</key>
-				<string>_seal</string>
+				<string></string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>physicsBody</key>
@@ -176,7 +176,7 @@
 				<key>displayName</key>
 				<string>seal</string>
 				<key>memberVarAssignmentName</key>
-				<string>_seal</string>
+				<string></string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>physicsBody</key>
@@ -299,7 +299,7 @@
 				<key>displayName</key>
 				<string>seal</string>
 				<key>memberVarAssignmentName</key>
-				<string>_seal</string>
+				<string></string>
 				<key>memberVarAssignmentType</key>
 				<integer>1</integer>
 				<key>physicsBody</key>

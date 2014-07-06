@@ -19,7 +19,6 @@
     CCPhysicsJoint *_mouseJoint;
     CCNode *_currentPenguin;
     CCPhysicsJoint *_penguinCatapultJoint;
-    CCNode *_seal;
 }
 
 // is called when CCB file has completed loading
@@ -134,7 +133,6 @@
 }
 
 - (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair seal:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
-    self.physicsBody.collisionType = @"seal";
     CCLOG(@"Something collided with a seal!");
     
     float energy = [pair totalKineticEnergy];

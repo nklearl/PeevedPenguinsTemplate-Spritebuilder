@@ -22,6 +22,7 @@
 
 - (void)didLoadFromCCB{
     self.physicsBody.collisionType = @"seal";
+    [self.physicsBody setType:CCPhysicsBodyTypeDynamic];
 }
 
 @end
