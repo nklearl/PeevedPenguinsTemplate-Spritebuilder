@@ -132,7 +132,7 @@
     [[CCDirector sharedDirector] replaceScene:[CCBReader loadAsScene:@"Gameplay"]];
 }
 
-- (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair seal:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
+- (BOOL)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)pair seal:(CCNode *)nodeA wildcard:(CCNode *)nodeB {
     float energy = [pair totalKineticEnergy];
     
     // if energy is large enough, remove the seal
@@ -141,6 +141,7 @@
             [self sealRemoved:nodeA];
         } key:nodeA];
     }
+    return TRUE;
 }
 
 - (void)sealRemoved:(CCNode *)seal {
