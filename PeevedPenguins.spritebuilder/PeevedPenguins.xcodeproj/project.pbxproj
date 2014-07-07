@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A05CE44196A1B8D006500C2 /* WaitingPenguin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A05CE43196A1B8D006500C2 /* WaitingPenguin.m */; };
 		0A2732721968BC740088BC98 /* Penguin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2732711968BC740088BC98 /* Penguin.m */; };
 		0A2732761968BCA50088BC98 /* Seal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2732751968BCA50088BC98 /* Seal.m */; };
 		0A4C1DD91968E743004C19A6 /* Gameplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4C1DD81968E743004C19A6 /* Gameplay.m */; };
@@ -59,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A05CE42196A1B8D006500C2 /* WaitingPenguin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitingPenguin.h; sourceTree = "<group>"; };
+		0A05CE43196A1B8D006500C2 /* WaitingPenguin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitingPenguin.m; sourceTree = "<group>"; };
 		0A2732701968BC740088BC98 /* Penguin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Penguin.h; sourceTree = "<group>"; };
 		0A2732711968BC740088BC98 /* Penguin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Penguin.m; sourceTree = "<group>"; };
 		0A2732741968BCA50088BC98 /* Seal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Seal.h; sourceTree = "<group>"; };
@@ -144,6 +147,8 @@
 				0A2732751968BCA50088BC98 /* Seal.m */,
 				0A4C1DD71968E743004C19A6 /* Gameplay.h */,
 				0A4C1DD81968E743004C19A6 /* Gameplay.m */,
+				0A05CE42196A1B8D006500C2 /* WaitingPenguin.h */,
+				0A05CE43196A1B8D006500C2 /* WaitingPenguin.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -357,6 +362,7 @@
 			files = (
 				0A2732761968BCA50088BC98 /* Seal.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
+				0A05CE44196A1B8D006500C2 /* WaitingPenguin.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				0A2732721968BC740088BC98 /* Penguin.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
