@@ -9,6 +9,8 @@
 #import "Gameplay.h"
 #import "CCPhysics+ObjectiveChipmunk.h"
 
+static const float MIN_SPEED = 5.f;
+
 @implementation Gameplay{
     CCPhysicsNode *_physicsNode;
     CCNode *_levelNode;
@@ -19,6 +21,7 @@
     CCPhysicsJoint *_mouseJoint;
     CCNode *_currentPenguin;
     CCPhysicsJoint *_penguinCatapultJoint;
+    CCAction *_followPenguin;
 }
 
 // is called when CCB file has completed loading
@@ -112,6 +115,8 @@
         // follow the flying penguin
         CCActionFollow *follow = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
         [_contentNode runAction:follow];
+        
+        _followPenguin = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
     }
 }
 
@@ -160,6 +165,36 @@
     
     // finally, remove the destroyed seal
     [seal removeFromParent];
+}
+
+- (void)update:(CCTime)delta {
+    // if speed is below minimum speed, assume this attempt is over
+    if (ccpLength(_currentPenguin.physicsBody.velocity) < MIN_SPEED){
+        [self nextAttempt];
+        return;
+    }
+    
+    int xMin = _currentPenguin.boundingBox.origin.x;
+    
+    if (xMin < self.boundingBox.origin.x) {
+        [self nextAttempt];
+        return;
+    }
+    
+    int xMax = xMin + _currentPenguin.boundingBox.size.width;
+    
+    if (xMax > (self.boundingBox.origin.x + self.boundingBox.size.width)) {
+        [self nextAttempt];
+        return;
+    }
+}
+
+- (void)nextAttempt {
+    _currentPenguin = nil;
+    [_contentNode stopAction:_followPenguin];
+    
+    CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(0, 0)];
+    [_contentNode runAction:actionMoveTo];
 }
 
 @end
