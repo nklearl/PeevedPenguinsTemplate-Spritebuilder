@@ -114,8 +114,8 @@ static const float MIN_SPEED = 5.f;
         _currentPenguin.physicsBody.allowsRotation = TRUE;
         
         // follow the flying penguin
-        CCActionFollow *follow = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
-        [_contentNode runAction:follow];
+//        CCActionFollow *follow = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
+//        [_contentNode runAction:follow];
         
         _followPenguin = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
         
@@ -171,7 +171,7 @@ static const float MIN_SPEED = 5.f;
 }
 
 - (void)update:(CCTime)delta {
-    if (YES) {
+    if (_currentPenguin.launched) {
         // if speed is below minimum speed, assume this attempt is over
         if (ccpLength(_currentPenguin.physicsBody.velocity) < MIN_SPEED){
             [self nextAttempt];
