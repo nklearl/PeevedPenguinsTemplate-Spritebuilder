@@ -179,19 +179,19 @@ static const float MIN_SPEED = 2.f;
             return;
         }
         
-//        int xMin = _currentPenguin.boundingBox.origin.x;
-//        
-//        if (xMin < self.boundingBox.origin.x) {
-//            [self nextAttempt];
-//            return;
-//        }
-//        
-//        int xMax = xMin + _currentPenguin.boundingBox.size.width;
-//        
-//        if (xMax > (self.boundingBox.origin.x + self.boundingBox.size.width)) {
-//            [self nextAttempt];
-//            return;
-//        }
+        int xMin = _currentPenguin.boundingBox.origin.x;
+        
+        if (xMin < self.boundingBox.origin.x) {
+            [self nextAttempt];
+            return;
+        }
+        
+        int xMax = xMin + _currentPenguin.boundingBox.size.width;
+        
+        if (xMax > (self.boundingBox.origin.x + self.boundingBox.size.width)) {
+            [self nextAttempt];
+            return;
+        }
         CCLOG(@"Velocity=%f", ccpLength(_currentPenguin.physicsBody.velocity));
     }
 }
@@ -200,7 +200,7 @@ static const float MIN_SPEED = 2.f;
     [_contentNode stopAction: _followPenguin];
     _currentPenguin = nil;
     
-    CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(0, 0)];
+    CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:3.f position:ccp(0, 0)];
     [_contentNode runAction:actionMoveTo];
 }
 
