@@ -118,6 +118,7 @@ static const float MIN_SPEED = 5.f;
 //        [_contentNode runAction:follow];
         
         _followPenguin = [CCActionFollow actionWithTarget:_currentPenguin worldBoundary:self.boundingBox];
+        [_contentNode runAction:_followPenguin];
         
         _currentPenguin.launched = TRUE;
     }
@@ -196,7 +197,7 @@ static const float MIN_SPEED = 5.f;
 }
 
 - (void)nextAttempt {
-    [_contentNode stopAction:_followPenguin];
+    [_contentNode stopAction: _followPenguin];
     _currentPenguin = nil;
     
     CCActionMoveTo *actionMoveTo = [CCActionMoveTo actionWithDuration:1.f position:ccp(0, 0)];
