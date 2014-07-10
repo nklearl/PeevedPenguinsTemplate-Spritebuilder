@@ -178,19 +178,19 @@ static const float MIN_SPEED = 5.f;
             return;
         }
         
-        int xMin = _currentPenguin.boundingBox.origin.x;
-        
-        if (xMin < self.boundingBox.origin.x) {
-            [self nextAttempt];
-            return;
-        }
-        
-        int xMax = xMin + _currentPenguin.boundingBox.size.width;
-        
-        if (xMax > (self.boundingBox.origin.x + self.boundingBox.size.width)) {
-            [self nextAttempt];
-            return;
-        }
+//        int xMin = _currentPenguin.boundingBox.origin.x;
+//        
+//        if (xMin < self.boundingBox.origin.x) {
+//            [self nextAttempt];
+//            return;
+//        }
+//        
+//        int xMax = xMin + _currentPenguin.boundingBox.size.width;
+//        
+//        if (xMax > (self.boundingBox.origin.x + self.boundingBox.size.width)) {
+//            [self nextAttempt];
+//            return;
+//        }
         CCLOG(@"Velocity=%f", ccpLength(_currentPenguin.physicsBody.velocity));
     }
 }
