@@ -192,7 +192,7 @@ static const float MIN_SPEED = 2.f;
             [self nextAttempt];
             return;
         }
-        CCLOG(@"Velocity=%f", ccpLength(_currentPenguin.physicsBody.velocity));
+        //CCLOG(@"Velocity=%f", ccpLength(_currentPenguin.physicsBody.velocity));
     }
 }
 
