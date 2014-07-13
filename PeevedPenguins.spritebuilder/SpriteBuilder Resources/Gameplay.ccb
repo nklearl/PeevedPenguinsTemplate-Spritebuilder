@@ -508,8 +508,8 @@
 									<key>points</key>
 									<array>
 										<array>
-											<real>0.0</real>
-											<real>0.0</real>
+											<real>0.93359375</real>
+											<real>24.804672241210938</real>
 										</array>
 										<array>
 											<real>-0.21875</real>
@@ -532,8 +532,8 @@
 											<real>104.609375</real>
 										</array>
 										<array>
-											<real>19.015609741210938</real>
-											<real>0.09375</real>
+											<real>16.04296875</real>
+											<real>24.304672241210938</real>
 										</array>
 									</array>
 									<key>polygons</key>
@@ -544,12 +544,12 @@
 												<real>136.9296875</real>
 											</array>
 											<array>
-												<real>0.0</real>
-												<real>0.0</real>
+												<real>0.93359375</real>
+												<real>24.804672241210938</real>
 											</array>
 											<array>
-												<real>19.015609741210938</real>
-												<real>0.09375</real>
+												<real>16.04296875</real>
+												<real>24.304672241210938</real>
 											</array>
 											<array>
 												<real>20.152328491210938</real>
@@ -663,6 +663,8 @@
 										</array>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -881,8 +883,6 @@
 										</array>
 									</dict>
 								</array>
-								<key>selected</key>
-								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
