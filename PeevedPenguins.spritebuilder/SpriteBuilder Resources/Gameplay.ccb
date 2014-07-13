@@ -516,12 +516,16 @@
 											<real>136.9296875</real>
 										</array>
 										<array>
-											<real>40.390625</real>
-											<real>183.77734375</real>
+											<real>34.39453125</real>
+											<real>177.77340698242188</real>
 										</array>
 										<array>
-											<real>38.75390625</real>
-											<real>104.34375</real>
+											<real>24.7421875</real>
+											<real>137.82809448242188</real>
+										</array>
+										<array>
+											<real>31.01953125</real>
+											<real>104.39840698242188</real>
 										</array>
 										<array>
 											<real>20.152328491210938</real>
@@ -554,20 +558,34 @@
 										</array>
 										<array>
 											<array>
-												<real>20.152328491210938</real>
-												<real>104.609375</real>
+												<real>24.7421875</real>
+												<real>137.82809448242188</real>
 											</array>
 											<array>
-												<real>38.75390625</real>
-												<real>104.34375</real>
-											</array>
-											<array>
-												<real>40.390625</real>
-												<real>183.77734375</real>
+												<real>34.39453125</real>
+												<real>177.77340698242188</real>
 											</array>
 											<array>
 												<real>-0.21875</real>
 												<real>136.9296875</real>
+											</array>
+										</array>
+										<array>
+											<array>
+												<real>-0.21875</real>
+												<real>136.9296875</real>
+											</array>
+											<array>
+												<real>20.152328491210938</real>
+												<real>104.609375</real>
+											</array>
+											<array>
+												<real>31.01953125</real>
+												<real>104.39840698242188</real>
+											</array>
+											<array>
+												<real>24.7421875</real>
+												<real>137.82809448242188</real>
 											</array>
 										</array>
 									</array>
@@ -645,6 +663,8 @@
 										</array>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -1556,8 +1576,6 @@
 								<string>WaitingPenguin.ccb</string>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
