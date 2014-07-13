@@ -1417,9 +1417,9 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>0.5</real>
-									<real>0.5</real>
-									<false/>
+									<real>1</real>
+									<real>1</real>
+									<true/>
 									<integer>0</integer>
 								</array>
 							</dict>
@@ -1479,9 +1479,9 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>0.5</real>
-									<real>0.5</real>
-									<false/>
+									<real>1</real>
+									<real>1</real>
+									<true/>
 									<integer>0</integer>
 								</array>
 							</dict>
@@ -1541,9 +1541,9 @@
 								<string>ScaleLock</string>
 								<key>value</key>
 								<array>
-									<real>0.5</real>
-									<real>0.5</real>
-									<false/>
+									<real>1</real>
+									<real>1</real>
+									<true/>
 									<integer>0</integer>
 								</array>
 							</dict>
@@ -1556,6 +1556,8 @@
 								<string>WaitingPenguin.ccb</string>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
@@ -1954,8 +1956,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
