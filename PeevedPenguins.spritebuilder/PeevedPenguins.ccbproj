@@ -89,10 +89,14 @@
 		<dict/>
 		<key>animation</key>
 		<dict>
+			<key>isDirty</key>
+			<true/>
 			<key>isSmartSpriteSheet</key>
 			<true/>
 		</dict>
 		<key>animation/1.png</key>
+		<dict/>
+		<key>animation/120.png</key>
 		<dict/>
 		<key>ccbResources</key>
 		<dict>
