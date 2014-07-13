@@ -55,8 +55,8 @@
 					<string>Position</string>
 					<key>value</key>
 					<array>
-						<real>230.30000305175781</real>
-						<real>104</real>
+						<real>228.19999694824219</real>
+						<real>103</real>
 						<integer>0</integer>
 						<integer>0</integer>
 						<integer>0</integer>
@@ -93,8 +93,8 @@
 					<string>Point</string>
 					<key>value</key>
 					<array>
-						<real>10.300000190734863</real>
-						<real>14</real>
+						<real>8.1999998092651367</real>
+						<real>13</real>
 					</array>
 				</dict>
 				<dict>
@@ -163,8 +163,6 @@
 					<integer>1</integer>
 				</dict>
 			</array>
-			<key>selected</key>
-			<true/>
 		</dict>
 		<dict>
 			<key>UUID</key>
@@ -293,6 +291,8 @@
 					<real>500</real>
 				</dict>
 			</array>
+			<key>selected</key>
+			<true/>
 		</dict>
 	</array>
 	<key>jsControlled</key>
@@ -486,7 +486,7 @@
 								<key>physicsBody</key>
 								<dict>
 									<key>affectedByGravity</key>
-									<true/>
+									<false/>
 									<key>allowsRotation</key>
 									<true/>
 									<key>bodyShape</key>
@@ -504,9 +504,9 @@
 									<key>dynamic</key>
 									<true/>
 									<key>elasticity</key>
-									<real>0.30000001192092896</real>
+									<real>0.0</real>
 									<key>friction</key>
-									<real>0.30000001192092896</real>
+									<real>0.0</real>
 									<key>points</key>
 									<array>
 										<array>
@@ -716,8 +716,8 @@
 											<real>40.60546875</real>
 										</array>
 										<array>
-											<real>61.58203125</real>
-											<real>51.6875</real>
+											<real>58.82421875</real>
+											<real>51.343734741210938</real>
 										</array>
 										<array>
 											<real>82.79296875</real>
@@ -766,8 +766,8 @@
 												<real>41.703125</real>
 											</array>
 											<array>
-												<real>61.58203125</real>
-												<real>51.6875</real>
+												<real>58.82421875</real>
+												<real>51.343734741210938</real>
 											</array>
 											<array>
 												<real>0.47265625</real>
@@ -778,14 +778,14 @@
 												<real>10.19921875</real>
 											</array>
 											<array>
-												<real>84.852775573730469</real>
-												<real>10.291379928588867</real>
+												<real>90.500724792480469</real>
+												<real>10.298995971679688</real>
 											</array>
 										</array>
 										<array>
 											<array>
-												<real>84.852775573730469</real>
-												<real>10.291379928588867</real>
+												<real>90.500724792480469</real>
+												<real>10.298995971679688</real>
 											</array>
 											<array>
 												<real>213.50390625</real>
